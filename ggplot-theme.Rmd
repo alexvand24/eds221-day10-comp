@@ -1,0 +1,36 @@
+---
+title: "ggplot theme"
+author: "Alex Vand"
+date: "8/20/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse) # ggplot
+library(palmerpenguins) # data
+library(noodleturtle) # customized ggplot theme
+library(pestomonkey) # Peter's package
+library(falafelgecko) # Juliet's package
+```
+
+```{r}
+ggplot(data = penguins, aes(x = species, y = body_mass_g)) +
+  geom_jitter() +
+  labs(x = "Species",
+       y = "Body mass (g)") +
+  theme_super_rad_butnotrly()
+#  theme_uggo()
+```
+
+
+
+
+
+
+
+
+
+
+
+
